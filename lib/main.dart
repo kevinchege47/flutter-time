@@ -17,16 +17,8 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.green[600],
       ),
-      body: const Center(
-        child: Text(
-          "Hello Ninjas",
-          style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.black54,
-              letterSpacing: 2.0,
-              fontFamily: 'Tilt'),
-        ),
+      body: Center(
+        child: Image.network('https://images.unsplash.com/photo-1676840642714-2ebccd286ca2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8aVVJc25WdGpCMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60')
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
