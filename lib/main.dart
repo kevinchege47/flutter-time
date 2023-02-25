@@ -14,44 +14,14 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.green[600],
       ),
-      body: Center(
-        child: IconButton(
-          onPressed: () {
-            if (kDebugMode) {
-              print('pressed me');
-            }
-          },
-          icon: const Icon(Icons.access_alarm),
-        ),
-
+      body: const Padding(
+        padding: EdgeInsets.all(30.0),
+        child:Text('hello'),),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.green[600],
+        child: const Text("Click"),
       ),
-      floatingActionButton: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        verticalDirection: VerticalDirection.up,
-        children: const [
-          Text(
-            'Flutter',
-            style: TextStyle(
-                color: Colors.yellow,
-                fontSize: 30.0
-            ),
-          ),
-         FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: Colors.green[600],
-          child: Text("Click"),
-        ),
-      ),
-          Text(
-            'Flutter',
-            style: TextStyle(
-                color: Colors.blue,
-                fontSize: 20.0
-            ),
-          ),
-        ],
-      ),
-
     );
   }
 }
